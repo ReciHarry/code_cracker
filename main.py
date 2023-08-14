@@ -12,10 +12,13 @@ else:
     print(input_n) # is off by 1, not sure why.
 
 
+# below is a much more simplified solution
+
 wrong_answer = utils.try_crack_the_code(41)
 
 for i in range(10000):
     if utils.try_crack_the_code(i) != wrong_answer:
         print(i)
 
-
+# first version returns 2089
+# second version requires user input, then returns 2088
